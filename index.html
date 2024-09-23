@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Text with ChatGPT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        img {
+            max-width: 250px;
+            margin: 30px 0;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:disabled {
+            background-color: #d3d3d3;
+            cursor: not-allowed;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #error {
+            color: red;
+            font-size: 16px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Voice to Text with ChatGPT in real-time</h1>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.QUBSBBv5jbZGzMJd8qB5FQAAAA&pid=Api&P=0&h=220" alt="Speech to Text Icon">
+        <!-- Replace the src URL with a real image link or local path -->
+    </header>
+
+    <button id="start-btn">Start Speaking</button>
+    <button id="stop-btn" disabled>Stop</button>
+    <button id="download-btn" disabled>Download Transcription</button>
+
+    <p><strong>Transcription:</strong></p>
+    <p id="output">Your speech will appear here...</p>
+
+    <p id="error"></p>
+
+    <footer>
+        <p>Powered by Whisper AI & ChatGPT</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

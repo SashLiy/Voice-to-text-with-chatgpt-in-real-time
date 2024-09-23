@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=htKGlpWdYlQ
+
+
+1. "C:\Users\Asus\Speech-to-text"
+2. open vs code and upload that folder
+3. from vs code open app.js code , replace the path of your API KEY path and next save it
+4. from vs code open index.html code and save it
+5. open command prompt and type "python -m http.server 8000"
+6. next open chrome and type "http://localhost:8000"
